@@ -1,5 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import styles from '../../styles.module.css';
+import styles from './Searchbar.module.css';
+import PropTypes from 'prop-types';
 export const Searchbar = ({ onSubmit }) => (
   <header className={styles.Searchbar}>
     <Formik
@@ -28,3 +29,6 @@ export const Searchbar = ({ onSubmit }) => (
     </Formik>
   </header>
 );
+Searchbar.prototype = {
+  onSubmit: PropTypes.func.isRequired,
+};

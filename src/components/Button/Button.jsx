@@ -1,4 +1,5 @@
-import style from 'styles.module.css';
+import PropTypes from 'prop-types';
+import style from './Button.module.css';
 
 export const Button = ({ setPage }) => {
   return (
@@ -6,4 +7,7 @@ export const Button = ({ setPage }) => {
       Load more
     </button>
   );
+};
+Button.prototype = {
+  setPage: PropTypes.func.isRequired,
 };
