@@ -11,3 +11,4 @@ export const Button = ({ setPage }) => {
 Button.prototype = {
   setPage: PropTypes.func.isRequired,
 };
+//
